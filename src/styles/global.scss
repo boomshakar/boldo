@@ -1,32 +1,38 @@
 @import './_variables.scss';
 
-.container{
+.container {
   padding: 2em 4em;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
 }
 
 // NavBar
-.nav-contain{
+.nav-contain {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
 
-  .nav-link{
-    &_contain{
+  .nav-link {
+    &_contain {
       display: inline-flex;
       flex-flow: row wrap;
-    align-items: center;
-    list-style-type: none;
-  }
-    &_link{
+      align-items: center;
+      list-style-type: none;
+    }
+    &_link {
       color: $white;
       font-weight: 600;
       line-height: 28px;
       font-size: 16px;
-      font-family: "Open Sans","Manrope", "Helvetica Neue";
+      font-family: 'Open Sans', 'Manrope', 'Helvetica Neue';
       margin-right: 2.3em;
 
-      &:last-child{
+      &:last-child {
         margin-right: 0;
       }
     }
@@ -34,38 +40,38 @@
 }
 
 // Button
-.button{
+.button {
   outline: none;
   padding: 0.5em 2.8em;
   color: $darkBlue;
   font-weight: 700;
-  font-family: "Open Sans","Manrope", "Helvetica Neue";
+  font-family: 'Open Sans', 'Manrope', 'Helvetica Neue';
   line-height: 28px;
   font-size: 16px;
   border-radius: 24px;
   border: 2px solid;
   cursor: pointer;
 
-  &.primary{
+  &.primary {
     color: $white;
     background: $darkBlue;
     border-color: $darkBlue;
   }
-  &.pry_green{
+  &.pry_green {
     background: $green;
     border-color: $greenBD;
   }
-  &.pry_white{
+  &.pry_white {
     background: $white;
     border-color: $white;
   }
-  &.secondary{
+  &.secondary {
     background: $white;
     border-color: $darkBlue;
   }
-  &.sec_white{
+  &.sec_white {
     color: $white;
     background: transparent;
-    border-color: $white
+    border-color: $white;
   }
 }

@@ -31,7 +31,6 @@
     ]
   },
   "eslint": "eslint src/**",
-  "prettier": "prettier --write .",
   "browserslist": {
     "production": [
       ">0.2%",

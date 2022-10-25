@@ -7,7 +7,10 @@
         "eslint:recommended",
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
-        "prettier"
+        "prettier",
+        "plugin:prettier/recommended",
+        "prettier/react",
+        "prettier/@typescript-eslint"
     ],
     "overrides": [
     ],
