@@ -1,8 +1,10 @@
 @import './_variables.scss';
 
+* {
+  box-sizing: border-box;
+}
 .container {
   padding: 2em 4em;
-  box-sizing: border-box;
 }
 
 img {

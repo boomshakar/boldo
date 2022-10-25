@@ -28,8 +28,7 @@
         line-height: 150%;
       }
       p {
-        font-family: 'Open Sans', 'Manrope', 'Helvetica Neue';
-        font-style: normal;
+        font-family: $openSans;
         font-weight: 400;
         font-size: 16px;
         line-height: 175%;
@@ -118,6 +117,89 @@
 
       img {
         min-width: 100px;
+      }
+    }
+  }
+}
+.our_services_sect {
+  background-color: $white;
+  .handshake_service {
+    & > .title {
+      h4 {
+        font-family: $openSans;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        text-align: center;
+        color: $grey;
+        margin-bottom: 0;
+      }
+    }
+    & > .info {
+      max-width: 842px;
+      margin: 0 auto;
+      h3 {
+        font-family: 'Manrope';
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 150%;
+        color: $black;
+        text-align: center;
+        margin-top: 0;
+      }
+    }
+    .card_feature_contain {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, max-content));
+      justify-content: space-between;
+      grid-gap: 2em;
+      padding: 0;
+
+      .service_card {
+        width: 300px;
+        height: 575px;
+        display: flex;
+        flex-flow: column wrap;
+        .img_contain {
+          height: 354px;
+        }
+        .infoDesc {
+          .title {
+            font-family: $openSans;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            color: $black;
+          }
+          .description {
+            font-family: $openSans;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+            color: $grey;
+          }
+        }
+        .explore_page {
+          & > a {
+            display: inline-flex;
+            align-items: center;
+            color: $darkBlue;
+            padding-bottom: 8px;
+            border-bottom: 1px solid $darkBlue;
+
+            .link_title {
+              font-family: $openSans;
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 36px;
+              margin-right: 12px;
+            }
+            .arrow_right {
+              width: 24px;
+              height: 26px;
+            }
+          }
+        }
       }
     }
   }
