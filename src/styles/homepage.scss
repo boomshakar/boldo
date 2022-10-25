@@ -1,0 +1,11 @@
+@import './_variables.scss';
+
+.home_container{
+  background-color: $darkBlue;
+  background-image: url('../../public/assets/images/header_bg_mask.svg');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 700px 400px;
+  min-height: 500px;
+  color: $white;
+}

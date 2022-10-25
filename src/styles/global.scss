@@ -1,0 +1,71 @@
+@import './_variables.scss';
+
+.container{
+  padding: 2em 4em;
+}
+
+// NavBar
+.nav-contain{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav-link{
+    &_contain{
+      display: inline-flex;
+      flex-flow: row wrap;
+    align-items: center;
+    list-style-type: none;
+  }
+    &_link{
+      color: $white;
+      font-weight: 600;
+      line-height: 28px;
+      font-size: 16px;
+      font-family: "Open Sans","Manrope", "Helvetica Neue";
+      margin-right: 2.3em;
+
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+// Button
+.button{
+  outline: none;
+  padding: 0.5em 2.8em;
+  color: $darkBlue;
+  font-weight: 700;
+  font-family: "Open Sans","Manrope", "Helvetica Neue";
+  line-height: 28px;
+  font-size: 16px;
+  border-radius: 24px;
+  border: 2px solid;
+  cursor: pointer;
+
+  &.primary{
+    color: $white;
+    background: $darkBlue;
+    border-color: $darkBlue;
+  }
+  &.pry_green{
+    background: $green;
+    border-color: $greenBD;
+  }
+  &.pry_white{
+    background: $white;
+    border-color: $white;
+  }
+  &.secondary{
+    background: $white;
+    border-color: $darkBlue;
+  }
+  &.sec_white{
+    color: $white;
+    background: transparent;
+    border-color: $white
+  }
+}

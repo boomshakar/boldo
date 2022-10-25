@@ -1,7 +1,7 @@
 import React from 'react';
-import { About, Aboutv2, Blog, Homepage, Homev2 } from 'pages';
+import { About, Aboutv2, Blog, Homepage, Homev2 } from './pages';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { routes } from 'util/routes';
+import { routes } from './util/routes';
 
 function App() {
   return (

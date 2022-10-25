@@ -1,8 +1,11 @@
+import Homebanner from '../components/pageBanner/Homebanner'
 import React from 'react'
 
 const Homepage = () => {
   return (
-    <main>Homepage</main>
+    <main>
+      <Homebanner inverted={false}/>
+    </main>
   )
 }
 
