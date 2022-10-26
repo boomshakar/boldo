@@ -454,3 +454,53 @@
     }
   }
 }
+.faqs_sect {
+  background-color: $white;
+
+  .header_banner {
+    // max-width: 1100px;
+    // max-height: 403px;
+    margin: 0 auto;
+    margin-top: 2em;
+  }
+  .points_contain {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 3em 0;
+    .lead_text {
+      max-width: 500px;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 56px;
+      color: $black;
+      margin: 0;
+    }
+    .faq_points_items_contain {
+      max-width: 500px;
+      width: 100%;
+      .faq_points_item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $greyShade1;
+        span {
+          width: 28px;
+          height: 28px;
+        }
+        p {
+          font-family: $openSans;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 32px;
+          color: $black;
+          word-break: break-all;
+
+          &:first-child {
+            margin-top: 0.7em;
+          }
+        }
+      }
+    }
+  }
+}
