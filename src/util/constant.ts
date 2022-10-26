@@ -1,4 +1,4 @@
-import { ServiceCardDetails } from '../models/propTypes';
+import { ServiceCardDetails, TestmonialInfo } from '../models/propTypes';
 
 export const serviceCardArr: ServiceCardDetails[] = [
   {
@@ -45,5 +45,35 @@ export const connCustomer1Items2 = [
   {
     img: '/assets/icons/sun.svg',
     desc: 'Business-to-consumer long tail.',
+  },
+];
+
+export const testimonialItems: TestmonialInfo[] = [
+  {
+    content: 'Buyer buzz partner network disruptive non-disclosure agreement business',
+    profile: {
+      img: '/assets/images/partner1.png',
+      position: 'Manager',
+      company: 'Howarts',
+      name: 'Albus Dumbledore',
+    },
+  },
+  {
+    content: 'Learning curve infrastructure value proposition advisor strategy user experience hypotheses investor.',
+    profile: {
+      img: '/assets/images/partner2.png',
+      position: 'Manager',
+      company: 'Slytherin',
+      name: 'Severus Snape',
+    },
+  },
+  {
+    content: 'Release facebook responsive web design business model canvas seed money monetization.',
+    profile: {
+      img: '/assets/images/partner3.png',
+      position: 'Team Leader',
+      company: 'Gryffindor',
+      name: 'Harry Potter',
+    },
   },
 ];

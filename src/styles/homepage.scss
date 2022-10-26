@@ -357,3 +357,100 @@
     }
   }
 }
+.testimonial_sect {
+  background-color: $darkBlue;
+  color: $white;
+  .testimonial_header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    .title {
+      font-weight: 400;
+      font-size: 45px;
+      line-height: 72px;
+      max-width: 716px;
+      margin: 1em 0;
+    }
+    .testimonial_card_navigation {
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      margin: 1em 0;
+      span {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        background-color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:first-child {
+          margin-right: 1.5em;
+        }
+        img {
+          width: 36px;
+          height: 39px;
+        }
+      }
+    }
+  }
+  .testimonial_card_contain {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, max-content));
+    // justify-content: space-between;
+    grid-gap: 2em;
+    padding: 0;
+    margin: 2em 0;
+
+    .testimonial_card_item {
+      width: 350px;
+      height: fit-content;
+      background-color: $white;
+      color: $black;
+      font-family: $openSans;
+      box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.12);
+      border-radius: 12px;
+      padding: 2em;
+
+      .content {
+        margin-bottom: 1em;
+        p {
+          margin: 0;
+          font-weight: 400;
+          font-family: $openSans;
+          font-size: 24px;
+          line-height: 36px;
+        }
+      }
+      .profile {
+        display: inline-flex;
+        align-items: center;
+        color: $darkBlue;
+        &_img {
+          margin-right: 10px;
+          width: 58px;
+          height: 58px;
+        }
+        &_info {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-family: $openSans;
+          h4 {
+            margin: 0;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 32px;
+          }
+          p {
+            margin: 0;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 32px;
+          }
+        }
+      }
+    }
+  }
+}

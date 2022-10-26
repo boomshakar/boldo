@@ -14,3 +14,14 @@ export type ServiceCardDetails = {
   description: string;
   link: string;
 };
+
+type PartnerProfile = {
+  img: string;
+  position: string;
+  company: string;
+  name: string;
+};
+export type TestmonialInfo = {
+  content: string;
+  profile: PartnerProfile;
+};

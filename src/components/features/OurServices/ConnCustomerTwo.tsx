@@ -1,6 +1,5 @@
 import React from 'react';
 import { connCustomer1Items2 } from '../../../util/constant';
-import Button from '../../button/Button';
 
 const ConnCustomerTwo = () => {
   return (
