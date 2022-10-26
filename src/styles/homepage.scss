@@ -124,6 +124,7 @@
 .our_services_sect {
   background-color: $white;
   .handshake_service {
+    margin: 1em 0;
     & > .title {
       h4 {
         font-family: $openSans;
@@ -154,6 +155,7 @@
       justify-content: space-between;
       grid-gap: 2em;
       padding: 0;
+      margin: 2em 0;
 
       .service_card {
         width: 300px;
@@ -199,6 +201,94 @@
               height: 26px;
             }
           }
+        }
+      }
+    }
+  }
+  .conn_customer {
+    margin: 1em 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .lt_sect {
+      max-width: 494px;
+      height: 610px;
+      position: relative;
+    }
+    .rt_sect {
+      max-width: 493px;
+    }
+    .sect_illustration {
+      width: 100%;
+      height: 100%;
+      max-height: 508px;
+      .overlay_analytics {
+        position: absolute;
+        width: 251px;
+        // bottom: -110px;
+        // bottom: -16%;
+        bottom: 0;
+        right: 57px;
+        background-color: $white;
+        box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.12);
+        border-radius: 12px;
+        padding: 2.51em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .analytics_illustration {
+          max-width: 170px;
+          max-height: 227px;
+        }
+        .analytics_info {
+          display: flex;
+          flex-flow: column wrap;
+          color: $darkBlue;
+          margin-top: 1.4em;
+          .centage {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+          }
+          .details {
+            font-size: 14px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+
+    &.svc_one {
+      .rt_sect {
+        .sect_title {
+          font-weight: 400;
+          font-size: 36px;
+          line-height: 56px;
+          color: $black;
+        }
+        .info_list_items {
+          .list_item {
+            display: inline-flex;
+            align-items: center;
+            span {
+              width: 36px;
+              height: 36px;
+              margin-right: 2em;
+            }
+            p {
+              font-family: $openSans;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 32px;
+              color: $black;
+            }
+          }
+        }
+        .cta {
+          margin: 2em 0;
         }
       }
     }

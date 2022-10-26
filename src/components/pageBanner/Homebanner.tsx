@@ -59,6 +59,9 @@ const Homebanner = (props: Inverted) => {
         <div className="logo_box">
           <img src="/assets/images/partner_logo2.svg" alt="partner_logo2" />
         </div>
+        <div className="logo_box">
+          <img src="/assets/images/partner_logo2.svg" alt="partner_logo2" />
+        </div>
       </div>
     </header>
   );

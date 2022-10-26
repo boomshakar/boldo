@@ -20,3 +20,15 @@ export const serviceCardArr: ServiceCardDetails[] = [
     link: '/',
   },
 ];
+
+export const connCustomer1Items1 = [
+  {
+    desc: 'We connect our customers with the best.',
+  },
+  {
+    desc: 'Advisor success customer launch party.',
+  },
+  {
+    desc: 'Business-to-consumer long tail.',
+  },
+];
