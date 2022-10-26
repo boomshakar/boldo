@@ -114,7 +114,7 @@ img {
 
       input {
         height: 100%;
-        padding: 0.2em 1em;
+        padding: 0.3em 1.3em;
         outline: none;
         border: 2px solid $white;
         border-radius: 24px;
@@ -126,6 +126,68 @@ img {
       }
       button {
         margin-top: 1em;
+      }
+    }
+  }
+  .main_footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 2em 0;
+    .company_info_contain {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-right: 10%;
+      margin-top: 1em;
+      .company_info {
+        max-width: 300px;
+        .footer_logo {
+          width: fit-content;
+          margin-bottom: 2em;
+        }
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          font-family: $openSans;
+          color: $grey;
+        }
+      }
+      .rights {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        font-family: $openSans;
+        color: $grey;
+      }
+    }
+    .sublink_contain {
+      max-width: 642px;
+      width: 100%;
+      // justify-self: center;
+      margin-top: 1em;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      .sublink_item_list {
+        width: 150px;
+        .title {
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 32px;
+          font-family: $openSans;
+        }
+        & > div {
+          margin-bottom: 1.5rem;
+        }
+        .sublink_item {
+          display: block;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 32px;
+          font-family: $openSans;
+          color: $grey;
+        }
       }
     }
   }

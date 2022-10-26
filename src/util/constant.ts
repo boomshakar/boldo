@@ -1,4 +1,4 @@
-import { BlogArticle, ServiceCardDetails, TestmonialInfo } from '../models/propTypes';
+import { BlogArticle, CompanySublink, ServiceCardDetails, TestmonialInfo } from '../models/propTypes';
 
 export const serviceCardArr: ServiceCardDetails[] = [
   {
@@ -117,5 +117,58 @@ export const blogPeakArticles: BlogArticle[] = [
       img: '/assets/images/blog_user3.png',
       name: 'Monica Geller',
     },
+  },
+];
+export const getCompanySubLinks: CompanySublink[] = [
+  {
+    title: 'Landings',
+    subLink: [
+      {
+        label: 'Home',
+        linkTo: '/',
+      },
+      {
+        label: 'Products',
+        linkTo: '/',
+      },
+      {
+        label: 'Services',
+        linkTo: '/',
+      },
+    ],
+  },
+  {
+    title: 'Company',
+    subLink: [
+      {
+        label: 'Home',
+        linkTo: '/',
+      },
+      {
+        label: 'Careers',
+        linkTo: '/',
+      },
+      {
+        label: 'Services',
+        linkTo: '/',
+      },
+    ],
+  },
+  {
+    title: 'Resources',
+    subLink: [
+      {
+        label: 'Blog',
+        linkTo: '/',
+      },
+      {
+        label: 'Products',
+        linkTo: '/',
+      },
+      {
+        label: 'Services',
+        linkTo: '/',
+      },
+    ],
   },
 ];
