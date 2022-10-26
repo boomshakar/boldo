@@ -1,10 +1,12 @@
-import React from 'react'
-import { ButtonType } from '../../models/propTypes'
+import React from 'react';
+import { ButtonType } from '../../models/propTypes';
 
-const Button = ({type, label}:ButtonType ) => {
+const Button = ({ type, label, hmtype, onClick }: ButtonType) => {
   return (
-    <button className={`${type} button`}>{label }</button>
-  )
-}
+    <button onClick={onClick} className={`${type} button`} type={hmtype ?? 'button'}>
+      {label}
+    </button>
+  );
+};
 
-export default Button
+export default Button;
