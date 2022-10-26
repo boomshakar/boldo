@@ -17,11 +17,20 @@ export type ServiceCardDetails = {
 
 type PartnerProfile = {
   img: string;
-  position: string;
-  company: string;
+  position?: string;
+  company?: string;
   name: string;
 };
+
 export type TestmonialInfo = {
   content: string;
   profile: PartnerProfile;
+};
+
+export type BlogArticle = {
+  category: string;
+  content: string;
+  date: string;
+  thumbnail: string;
+  user: PartnerProfile;
 };

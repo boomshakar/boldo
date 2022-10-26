@@ -3,6 +3,7 @@ import React from 'react';
 import OurServices from '../components/features/OurServices';
 import Testimonials from '../components/features/Testimonials';
 import FAQs from '../components/features/FAQs';
+import BlogPeek from '../components/features/BlogPeek';
 
 const Homepage = () => {
   return (
@@ -11,6 +12,7 @@ const Homepage = () => {
       <OurServices />
       <Testimonials />
       <FAQs />
+      <BlogPeek />
     </main>
   );
 };

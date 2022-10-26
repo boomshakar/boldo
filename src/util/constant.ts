@@ -1,4 +1,4 @@
-import { ServiceCardDetails, TestmonialInfo } from '../models/propTypes';
+import { BlogArticle, ServiceCardDetails, TestmonialInfo } from '../models/propTypes';
 
 export const serviceCardArr: ServiceCardDetails[] = [
   {
@@ -74,6 +74,48 @@ export const testimonialItems: TestmonialInfo[] = [
       position: 'Team Leader',
       company: 'Gryffindor',
       name: 'Harry Potter',
+    },
+  },
+];
+export const blogPeakArticles: BlogArticle[] = [
+  {
+    category: 'Category',
+    date: 'November 22, 2021',
+    content: 'Pitch termsheet backing validation focus release.',
+    thumbnail: '/assets/images/blog_article1.png',
+    user: {
+      img: '/assets/images/blog_user1.png',
+      name: 'Chandler Bing',
+    },
+  },
+  {
+    category: 'Category',
+    date: 'November 22, 2021',
+    content: 'Seed round direct mailing non-disclosure agreement graphical user interface rockstar.',
+    thumbnail: '/assets/images/blog_article2.png',
+    user: {
+      img: '/assets/images/blog_user2.png',
+      name: 'Rachel Green',
+    },
+  },
+  {
+    category: 'Category',
+    date: 'November 22, 2021',
+    content: 'Beta prototype sales iPad gen-z marketing network effects value proposition',
+    thumbnail: '/assets/images/blog_article3.png',
+    user: {
+      img: '/assets/images/blog_user3.png',
+      name: 'Monica Geller',
+    },
+  },
+  {
+    category: 'Category',
+    date: 'November 22, 2021',
+    content: 'Beta prototype sales iPad gen-z marketing network effects value proposition',
+    thumbnail: '/assets/images/blog_article3.png',
+    user: {
+      img: '/assets/images/blog_user3.png',
+      name: 'Monica Geller',
     },
   },
 ];
