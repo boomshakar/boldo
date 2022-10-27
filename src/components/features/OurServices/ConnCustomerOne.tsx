@@ -4,7 +4,7 @@ import Button from '../../button/Button';
 
 const ConnCustomerOne = () => {
   return (
-    <section className="conn_customer svc_one">
+    <section className="conn_customer svc_one container">
       <div className="lt_sect">
         <div className="sect_illustration">
           <img src="/assets/images/customer_conn1.png" alt="customer_conn1" />

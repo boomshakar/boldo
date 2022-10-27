@@ -3,7 +3,7 @@ import { connCustomer1Items2 } from '../../../util/constant';
 
 const ConnCustomerTwo = () => {
   return (
-    <section className="conn_customer svc_two">
+    <section className="conn_customer svc_two container">
       <section className="rt_sect">
         <h2 className="sect_title">We connect our customers with the best, and help them keep up-and stay open.</h2>
         <div className="info_list_items">

@@ -38,7 +38,8 @@
         button {
           margin: 0.5em 0;
         }
-        .pry_green {
+        .pry_green,
+        .primary {
           margin-right: 24px;
         }
       }
@@ -119,11 +120,29 @@
       }
     }
   }
+
+  &.inverted {
+    background-color: $white;
+    background-image: url('../../public/assets/images/header_bg_mask_invert.svg');
+    color: $darkBlue;
+
+    .partner_mask {
+      display: none;
+    }
+
+    .bottom_analytics {
+      .btl {
+        background: rgba(10, 38, 64, 0.8) !important;
+        backdrop-filter: blur(72px) !important;
+      }
+    }
+  }
 }
 .our_services_sect {
   background-color: $white;
   .handshake_service {
     margin: 1em 0;
+    padding: 2em 4em;
     & > .title {
       h4 {
         font-family: $openSans;
@@ -198,6 +217,10 @@
             .arrow_right {
               width: 24px;
               height: 26px;
+
+              .invert_icn {
+                display: none;
+              }
             }
           }
         }
@@ -349,6 +372,46 @@
             &.active {
               color: $white;
               background-color: $darkBlue;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.inverted {
+    .handshake_service {
+      background-color: $darkBlue;
+      color: $white;
+      & > .title h4 {
+        color: $lighyGrey !important;
+      }
+      & > .info h3 {
+        color: $white !important;
+      }
+      .card_feature_contain {
+        .infoDesc {
+          .title {
+            color: $white !important;
+          }
+          .description {
+            display: none;
+          }
+        }
+        .explore_page {
+          color: $white !important;
+          width: fit-content;
+          border-bottom: 1px solid $white !important;
+          & > a {
+            display: inline-flex;
+            .link_title {
+              color: $white !important;
+            }
+            img {
+              display: none !important;
+            }
+            img.invert_icn {
+              display: inline !important;
             }
           }
         }

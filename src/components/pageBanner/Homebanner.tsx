@@ -18,13 +18,16 @@ const Homebanner = (props: Inverted) => {
             </p>
           </div>
           <div className="hero_ctas">
-            <Button type="pry_green" label="Buy Template" />
-            <Button type="sec_white" label="Explore" />
+            <Button type={`${props.inverted ? 'primary' : 'pry_green'}`} label="Buy Template" />
+            <Button type={`${props.inverted ? 'pry_white' : 'sec_white'}`} label="Explore" />
           </div>
         </div>
         <div className="right_hero_contain">
           <div className="top_analytics">
-            <img src="/assets/images/hero_stat_1.svg" alt="analytics_1" />
+            <img
+              src={`/assets/images/${props.inverted ? 'hero_stat_1_invert' : 'hero_stat_1'}.svg`}
+              alt="analytics_1"
+            />
           </div>
           <div className="bottom_analytics">
             <div className="btl">
@@ -34,7 +37,10 @@ const Homebanner = (props: Inverted) => {
               <img src="/assets/images/hero_stat_2.svg" alt="analytics_2" />
             </div>
             <div className="btr">
-              <img src="/assets/images/hero_stat_3.svg" alt="analytics_3" />
+              <img
+                src={`/assets/images/${props.inverted ? 'hero_stat_3_invert' : 'hero_stat_3'}.svg`}
+                alt="analytics_3"
+              />
             </div>
           </div>
         </div>
@@ -42,25 +48,46 @@ const Homebanner = (props: Inverted) => {
       <div className="partners_logo_contain">
         <div className="partner_mask"></div>
         <div className="logo_box">
-          <img src="/assets/images/partner_logo1.svg" alt="partner_logo1" />
+          <img
+            src={`/assets/images/${props.inverted ? 'partner_logo1_invert' : 'partner_logo1'}.svg`}
+            alt="partner_logo1"
+          />
         </div>
         <div className="logo_box">
-          <img src="/assets/images/partner_logo2.svg" alt="partner_logo2" />
+          <img
+            src={`/assets/images/${props.inverted ? 'partner_logo2_invert' : 'partner_logo2'}.svg`}
+            alt="partner_logo2"
+          />
         </div>
         <div className="logo_box">
-          <img src="/assets/images/partner_logo1.svg" alt="partner_logo1" />
+          <img
+            src={`/assets/images/${props.inverted ? 'partner_logo1_invert' : 'partner_logo1'}.svg`}
+            alt="partner_logo1"
+          />
         </div>
         <div className="logo_box">
-          <img src="/assets/images/partner_logo2.svg" alt="partner_logo2" />
+          <img
+            src={`/assets/images/${props.inverted ? 'partner_logo2_invert' : 'partner_logo2'}.svg`}
+            alt="partner_logo2"
+          />
         </div>
         <div className="logo_box">
-          <img src="/assets/images/partner_logo1.svg" alt="partner_logo1" />
+          <img
+            src={`/assets/images/${props.inverted ? 'partner_logo1_invert' : 'partner_logo1'}.svg`}
+            alt="partner_logo1"
+          />
         </div>
         <div className="logo_box">
-          <img src="/assets/images/partner_logo2.svg" alt="partner_logo2" />
+          <img
+            src={`/assets/images/${props.inverted ? 'partner_logo2_invert' : 'partner_logo2'}.svg`}
+            alt="partner_logo2"
+          />
         </div>
         <div className="logo_box">
-          <img src="/assets/images/partner_logo2.svg" alt="partner_logo2" />
+          <img
+            src={`/assets/images/${props.inverted ? 'partner_logo1_invert' : 'partner_logo1'}.svg`}
+            alt="partner_logo2"
+          />
         </div>
       </div>
     </header>

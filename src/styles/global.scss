@@ -40,6 +40,11 @@ img {
     }
   }
 }
+.inverted .nav-contain {
+  .nav-link_link {
+    color: $darkBlue !important;
+  }
+}
 
 // Button
 .button {

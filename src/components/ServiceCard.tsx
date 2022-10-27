@@ -18,6 +18,7 @@ const ServiceCard = (prop: ServiceCardDetails) => {
           <span className="link_title">Explore Page</span>
           <span className="arrow_right">
             <img src="/assets/icons/arrow-right.svg" alt="arrow-right" />
+            <img src="/assets/icons/arrow-right_inverted.svg" className="invert_icn" alt="arrow-right" />
           </span>
         </Link>
       </div>

@@ -9,7 +9,7 @@ const Homepage = () => {
   return (
     <main>
       <Homebanner inverted={false} />
-      <OurServices />
+      <OurServices inverted={false} />
       <Testimonials />
       <FAQs />
       <BlogPeek />
