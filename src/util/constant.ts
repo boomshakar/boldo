@@ -172,3 +172,59 @@ export const getCompanySubLinks: CompanySublink[] = [
     ],
   },
 ];
+export const getTeamMembers = [
+  {
+    name: 'Michael Scott',
+    position: 'General Manager',
+    display: '/assets/images/team_member_1.png',
+  },
+  {
+    name: 'Dwight Schrute',
+    position: 'General Manager',
+    display: '/assets/images/team_member_2.png',
+  },
+  {
+    name: 'Pam Beetsley',
+    position: 'General Manager',
+    display: '/assets/images/team_member_3.png',
+  },
+];
+export const getTeamMembers2 = [
+  {
+    name: 'Michael Scott',
+    position: 'General Manager',
+    display: '/assets/images/team_member_1.png',
+  },
+  {
+    name: 'Michael Scott',
+    position: 'General Manager',
+    display: '/assets/images/team_member_1.png',
+  },
+  {
+    name: 'Michael Scott',
+    position: 'General Manager',
+    display: '/assets/images/team_member_1.png',
+  },
+];
+export const getTeamMembers3 = [
+  {
+    name: 'Michael Scott',
+    position: 'General Manager',
+    display: '/assets/images/team_member_1.png',
+  },
+  {
+    name: 'Pam Beetsley',
+    position: 'General Manager',
+    display: '/assets/images/team_member_3.png',
+  },
+  {
+    name: 'Pam Beetsley',
+    position: 'General Manager',
+    display: '/assets/images/team_member_3.png',
+  },
+  {
+    name: 'Pam Beetsley',
+    position: 'General Manager',
+    display: '/assets/images/team_member_3.png',
+  },
+];
