@@ -1,5 +1,7 @@
 import React from 'react';
 import Aboutv1HeroSec from '../components/features/Aboutv1HeroSec';
+import OurNumbers from '../components/features/OurNumbers';
+import OurStory from '../components/features/OurStory';
 import AboutBanner from '../components/pageBanner/AboutBanner';
 
 import '../styles/aboutpage.scss';
@@ -9,6 +11,8 @@ const About = () => {
     <main>
       <AboutBanner inverted={false} />
       <Aboutv1HeroSec />
+      <OurStory inverted={false} />
+      <OurNumbers inverted={false} />
     </main>
   );
 };

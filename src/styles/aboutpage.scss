@@ -74,3 +74,108 @@
     }
   }
 }
+.our_story_container {
+  .lead_container {
+    display: flex;
+    flex-direction: column;
+    // align-items: flex-start;
+    // justify-content: start;
+    min-height: 500px;
+    margin-bottom: 3em;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+    .info {
+      max-width: 842px;
+      width: 100%;
+      margin-bottom: 1em;
+      h4 {
+        font-weight: 400;
+        font-family: $openSans;
+        font-size: 20px;
+        line-height: 32px;
+        margin: 0;
+        margin-bottom: 1em;
+        color: $grey;
+      }
+      h2 {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 150%;
+        margin: 0;
+      }
+    }
+    .desc {
+      max-width: 800px;
+      width: 100%;
+      p {
+        font-family: $openSans;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: $grey;
+      }
+    }
+  }
+}
+.our_numbers_container {
+  background: $darkBlue;
+
+  .lead_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    text-align: center;
+    margin-bottom: 3em;
+    margin-top: 3em;
+
+    .info {
+      max-width: 842px;
+      width: 100%;
+      margin-bottom: 1em;
+      h4 {
+        font-weight: 400;
+        font-family: $openSans;
+        font-size: 20px;
+        line-height: 32px;
+        margin: 0;
+        margin-bottom: 1em;
+        color: $lighyGrey;
+      }
+      h2 {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 150%;
+        margin: 0;
+        color: $white;
+      }
+    }
+    .company_stats_contain {
+      max-width: 1000px;
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      margin-top: 2em;
+      h3 {
+        font-weight: 400;
+        font-size: 96px;
+        line-height: 56px;
+        color: $greenShade2;
+        margin-bottom: 0.5em;
+      }
+      p {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        font-family: $openSans;
+        color: $lighyGrey;
+      }
+    }
+  }
+}
