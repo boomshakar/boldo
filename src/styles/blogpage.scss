@@ -1,0 +1,98 @@
+@import './_variables.scss';
+
+.blog_container {
+  background: $white;
+
+  .lead_container {
+    margin-bottom: 2em;
+    .info {
+      text-align: center;
+      color: $darkBlue;
+      h1 {
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 84px;
+        margin-top: 0;
+      }
+      h4 {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .hero_banner_contain {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid $darkBlue;
+    padding-bottom: 8%;
+
+    .banner_img {
+      max-width: 550px;
+    }
+    .hero_banner_content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 570px;
+      .article_info {
+        .top {
+          display: inline-flex;
+          align-items: center;
+          margin-bottom: 1.5em;
+          margin-top: 1em;
+          .category {
+            font-family: $openSans;
+            margin-right: 0.7em;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 28px;
+            color: $darkBlue;
+          }
+          .date {
+            font-family: $openSans;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: $grey;
+          }
+        }
+        .bottom {
+          .content {
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 72px;
+            color: $black;
+            margin-top: 0;
+          }
+        }
+      }
+      .article_owner {
+        display: inline-flex;
+        span {
+          display: inline-block;
+        }
+        .owner_img {
+          width: 32px;
+          height: 32px;
+          margin-right: 0.7em;
+        }
+      }
+    }
+  }
+}
+.latest_news_contain {
+  & > h1 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 150%;
+  }
+  // .blog_articles_contain {
+  // }
+  .cta {
+    text-align: center;
+    margin: 3em 0;
+  }
+}

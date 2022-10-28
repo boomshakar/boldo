@@ -112,7 +112,27 @@ export const blogPeakArticles: BlogArticle[] = [
     category: 'Category',
     date: 'November 22, 2021',
     content: 'Beta prototype sales iPad gen-z marketing network effects value proposition',
-    thumbnail: '/assets/images/blog_article3.png',
+    thumbnail: '/assets/images/customer_conn1_1.png',
+    user: {
+      img: '/assets/images/blog_user1.png',
+      name: 'Chandler Bing',
+    },
+  },
+  {
+    category: 'Category',
+    date: 'November 22, 2021',
+    content: 'Beta prototype sales iPad gen-z marketing network effects value proposition',
+    thumbnail: '/assets/images/blog_article5.png',
+    user: {
+      img: '/assets/images/blog_user2.png',
+      name: 'Rachel Green',
+    },
+  },
+  {
+    category: 'Category',
+    date: 'November 22, 2021',
+    content: 'Beta prototype sales iPad gen-z marketing network effects value proposition',
+    thumbnail: '/assets/images/blog_article6.png',
     user: {
       img: '/assets/images/blog_user3.png',
       name: 'Monica Geller',

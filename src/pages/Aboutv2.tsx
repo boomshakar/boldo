@@ -5,6 +5,8 @@ import OurStory from '../components/features/OurStory';
 import OurTeam from '../components/features/OurTeam';
 import AboutBanner from '../components/pageBanner/AboutBanner';
 
+import '../styles/aboutpage.scss';
+
 const Aboutv2 = () => {
   return (
     <main>
