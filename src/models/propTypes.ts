@@ -1,11 +1,9 @@
-import React, { ButtonHTMLAttributes, DetailedHTMLProps } from 'react';
-
 export type Inverted = {
   inverted: boolean;
 };
 
 export type ButtonType = {
-  type: 'primary' | 'pry_green' | 'pry_white' | 'secondary' | 'sec_white';
+  type: 'primary' | 'pry_green' | 'pry_white' | 'secondary' | 'sec_white' | 'transparent';
   label: string;
   hmtype?: 'submit' | 'button' | 'reset';
   onClick?: () => void;

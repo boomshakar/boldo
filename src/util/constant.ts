@@ -210,7 +210,7 @@ export const getTeamMembers3 = [
   {
     name: 'Michael Scott',
     position: 'General Manager',
-    display: '/assets/images/team_member_1.png',
+    display: '/assets/images/team_member_2.png',
   },
   {
     name: 'Pam Beetsley',
@@ -226,5 +226,25 @@ export const getTeamMembers3 = [
     name: 'Pam Beetsley',
     position: 'General Manager',
     display: '/assets/images/team_member_3.png',
+  },
+];
+export const getOurBlogContrast = [
+  {
+    label: 'We are',
+    context: 'commited.',
+    content:
+      'Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration. ',
+  },
+  {
+    label: 'We are',
+    context: 'responsible.',
+    content:
+      'Mass market iPhone buzz conversion analytics stock iteration responsive web design user experience business plan handshake. Return on investment seed round MVP backing supply chain. ',
+  },
+  {
+    label: 'We aim for',
+    context: 'progress.',
+    content:
+      'Bootstrapping rockstar first mover advantage business model canvas alpha deployment launch party beta facebook metrics gamification growth hacking customer focus. ',
   },
 ];

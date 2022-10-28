@@ -1,9 +1,20 @@
-import React from 'react'
+import React from 'react';
+import OurBlog from '../components/features/OurBlog';
+import OurNumbers from '../components/features/OurNumbers';
+import OurStory from '../components/features/OurStory';
+import OurTeam from '../components/features/OurTeam';
+import AboutBanner from '../components/pageBanner/AboutBanner';
 
 const Aboutv2 = () => {
   return (
-    <main>Aboutv2</main>
-  )
-}
+    <main>
+      <AboutBanner inverted={true} />
+      <OurNumbers inverted={true} />
+      <OurStory inverted={true} />
+      <OurTeam inverted={true} />
+      <OurBlog />
+    </main>
+  );
+};
 
-export default Aboutv2
+export default Aboutv2;

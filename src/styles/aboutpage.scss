@@ -118,6 +118,20 @@
       }
     }
   }
+  &.inverted {
+    background: $darkBlue;
+    .lead_container {
+      margin-bottom: 0;
+      justify-content: center;
+      .info h4,
+      .info h2 {
+        color: $white;
+      }
+      .desc p {
+        color: $lighyGrey;
+      }
+    }
+  }
 }
 .our_numbers_container {
   background: $darkBlue;
@@ -175,6 +189,24 @@
         line-height: 36px;
         font-family: $openSans;
         color: $lighyGrey;
+      }
+    }
+  }
+  &.inverted {
+    background: $white;
+
+    .lead_container {
+      .info {
+        h4,
+        h2 {
+          color: $darkBlue !important;
+        }
+      }
+    }
+    .company_stats_contain {
+      h3,
+      p {
+        color: $darkBlue !important;
       }
     }
   }
@@ -241,6 +273,7 @@
           font-size: 28px;
           line-height: 171%;
           margin-bottom: 0;
+          margin-top: 0.7em;
         }
         p {
           font-weight: 400;
@@ -248,6 +281,7 @@
           line-height: 160%;
           font-family: $openSans;
           margin-top: 0.7em;
+          margin-bottom: 0;
         }
       }
     }
@@ -258,16 +292,20 @@
       .team_member {
         .team_member_display {
           max-width: 250px;
+          height: 250px;
         }
       }
     }
     &.disp_row {
+      margin-top: 4em;
       max-width: 901px;
       grid-template-columns: repeat(auto-fill, minmax(400px, max-content));
       .team_member {
         display: flex;
+        height: 120px;
         .team_member_display {
-          max-width: 120px;
+          width: 120px;
+          margin-right: 10px;
         }
       }
     }
@@ -284,6 +322,104 @@
       display: block;
       .team_members_contain {
         display: grid;
+      }
+    }
+  }
+}
+.our_blog_container {
+  background-color: $darkBlue;
+  color: $white;
+  min-height: 400px;
+  .lead_contain {
+    text-align: center;
+    max-width: 1099px;
+    margin: 0 auto;
+    color: $white;
+    border-bottom: 1px solid $white;
+    padding-bottom: 1em;
+
+    h4 {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      font-family: $openSans;
+    }
+    h2 {
+      font-weight: 400;
+      font-size: 44px;
+      line-height: 72px;
+      max-width: 862px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .blog_insight_contain {
+    margin: 2em auto;
+    // margin-top: 2em;
+    max-width: 1099px;
+    .blog_insight_item {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      &-key {
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 1.5em;
+        h3 {
+          font-weight: 400;
+          font-size: 48px;
+          line-height: 72px;
+          margin-top: 0.4em;
+          span {
+            color: $green;
+          }
+        }
+      }
+      &-value {
+        width: 100%;
+        max-width: 510px;
+        p {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 32px;
+          color: $lighyGrey;
+        }
+      }
+    }
+  }
+}
+
+.about_container.inverted {
+  background-color: $green;
+
+  .nav-link_link.btn_default {
+    display: none;
+  }
+  .nav-link_link.btn_aboutv2 {
+    display: block;
+  }
+  .lead_container {
+    text-align: left;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    min-height: 400px;
+    margin-bottom: 0;
+    .info {
+      max-width: 610px;
+      h4 {
+        color: $darkBlue;
+      }
+      h1 {
+        color: $black;
+        font-size: 48px;
+        line-height: 150%;
+      }
+    }
+    .desc {
+      max-width: 455px;
+      margin: 0 auto;
+      p {
+        color: $darkBlue;
       }
     }
   }

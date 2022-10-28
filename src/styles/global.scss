@@ -37,6 +37,9 @@ img {
       &:last-child {
         margin-right: 0;
       }
+      &.btn_aboutv2 {
+        display: none;
+      }
     }
   }
 }
@@ -71,6 +74,11 @@ img {
   &.pry_white {
     background: $white;
     border-color: $darkBlue;
+  }
+  &.transparent {
+    background: transparent;
+    border-color: $darkBlue;
+    color: $darkBlue;
   }
   &.secondary {
     background: $white;
