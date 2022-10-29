@@ -47,7 +47,7 @@ const Homebanner = (props: Inverted) => {
       </section>
       <div className="partners_logo_contain">
         <div className="partner_mask"></div>
-        <div className="logo_box">
+        <div className="logo_box first_ch">
           <img
             src={`/assets/images/${props.inverted ? 'partner_logo1_invert' : 'partner_logo1'}.svg`}
             alt="partner_logo1"
@@ -77,15 +77,9 @@ const Homebanner = (props: Inverted) => {
             alt="partner_logo1"
           />
         </div>
-        <div className="logo_box">
+        <div className="logo_box last_ch">
           <img
             src={`/assets/images/${props.inverted ? 'partner_logo2_invert' : 'partner_logo2'}.svg`}
-            alt="partner_logo2"
-          />
-        </div>
-        <div className="logo_box">
-          <img
-            src={`/assets/images/${props.inverted ? 'partner_logo1_invert' : 'partner_logo1'}.svg`}
             alt="partner_logo2"
           />
         </div>

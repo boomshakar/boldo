@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .container {
-  padding: 2em 4em;
+  padding: 2em 6em;
 }
 
 img {
@@ -34,7 +34,8 @@ img {
       font-family: 'Open Sans', 'Manrope', 'Helvetica Neue';
       margin-right: 2.3em;
 
-      &:last-child {
+      &:last-child,
+      &.btn_default {
         margin-right: 0;
       }
       &.btn_aboutv2 {

@@ -1,7 +1,6 @@
 import React from 'react';
 import { blogPeakArticles } from '../../../util/constant';
 import BlogArticleCard from '../../BlogArticleCard';
-import Button from '../../button/Button';
 
 const BlogPeek = () => {
   return (
