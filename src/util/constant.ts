@@ -9,7 +9,7 @@ export const serviceCardArr: ServiceCardDetails[] = [
   },
   {
     img: '/assets/images/service_card2.svg',
-    title: 'Cool feature title',
+    title: 'Even cooler feature',
     description: 'Learning curve network effects return on investment.',
     link: '/',
   },
@@ -228,7 +228,7 @@ export const getTeamMembers2 = [
 ];
 export const getTeamMembers3 = [
   {
-    name: 'Michael Scott',
+    name: 'Dwight Schrute',
     position: 'General Manager',
     display: '/assets/images/team_member_2.png',
   },

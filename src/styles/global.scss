@@ -97,10 +97,13 @@ img {
 .blog_articles_contain {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, min-content));
-  justify-content: space-around;
-  grid-gap: 2em;
+  justify-content: space-between;
+  // grid-gap: 2em;
+  grid-row-gap: 80px;
+  grid-column-gap: 50px;
   padding: 0;
-  margin: 3em 0;
+  max-width: 1000px;
+  margin: 3em auto;
 
   .article_item {
     display: flex;
@@ -148,6 +151,7 @@ img {
       bottom: 0;
       left: 0;
       display: inline-flex;
+      align-items: center;
       span {
         display: inline-block;
       }
@@ -163,6 +167,8 @@ img {
 // FooterCTA
 .footer_cta_sect {
   background-color: $white;
+  padding-top: 6em;
+  padding-bottom: 5em;
 
   .newsletter_cta {
     background-color: $darkBlue;

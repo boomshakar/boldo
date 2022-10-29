@@ -40,6 +40,12 @@
   font-weight: 800;
   src: local('Manrope'), url(/public/assets/fonts/manrope/manrope-extrabold.otf) format('opentype');
 }
+@font-face {
+  font-family: 'Open Sans';
+  font-display: fallback;
+  font-weight: 400;
+  src: local('Open Sans'), url(/public/assets/fonts/OpenSans/OpenSans-Regular.ttf) format('truetype');
+}
 body {
   margin: 0 auto;
   max-width: 1400px;

@@ -10,13 +10,13 @@ const Aboutv1HeroSec = () => {
         <div className="illustration_list_item mid">
           <img src="/assets/images/customer_conn2_2.png" alt="" />
         </div>
-        <div className="illustration_list_item">
+        <div className="illustration_list_item right">
           <img src="/assets/images/blog_article1.png" alt="" />
         </div>
-        <div className="illustration_list_item">
+        <div className="illustration_list_item ">
           <img src="/assets/images/blog_article3.png" alt="" />
         </div>
-        <div className="illustration_list_item">
+        <div className="illustration_list_item right">
           <img src="/assets/images/blog_article4.png" alt="" />
         </div>
       </div>
