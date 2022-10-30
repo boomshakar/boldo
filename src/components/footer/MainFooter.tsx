@@ -26,7 +26,10 @@ const MainFooter = () => {
               {subLink.map((inData, indx) => (
                 <div key={indx}>
                   <Link to={inData.linkTo}>
-                    <span className="sublink_item">{inData.label}</span>
+                    <span className="sublink_item">
+                      {inData.label}
+                      {inData.tag ? <span className="tag">{inData.tag}</span> : <></>}
+                    </span>
                   </Link>
                 </div>
               ))}

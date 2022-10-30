@@ -9,3 +9,71 @@ $greyShade1: #c4c4c4;
 $blue: #0dbbfc;
 $black: #000000;
 $openSans: 'Open Sans', 'Manrope', 'Helvetica Neue';
+
+@mixin head_h1_default($color: 'inherit') {
+  font-size: clamp(1.8em, 4.8vw, 3em);
+  font-weight: 400;
+  line-height: 150%;
+  color: $color;
+}
+@mixin para_p_default($color: 'inherit') {
+  font-family: $openSans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: $color;
+}
+@mixin txt_36($color: 'inherit') {
+  font-weight: 400;
+  font-size: clamp(1.5em, 3.75vw, 2.25em);
+  line-height: 156%;
+  color: $color;
+}
+@mixin txt_24_sans($color: 'inherit') {
+  font-family: $openSans;
+  font-weight: 400;
+  font-size: clamp(1.2em, 2.5vw, 1.5em);
+  line-height: 150%;
+  color: $color;
+}
+@mixin txt_20_sans($color: 'inherit') {
+  font-family: $openSans;
+  font-weight: 400;
+  font-size: clamp(0.8em, 2.1vw, 1.25em);
+  line-height: 160%;
+  color: $color;
+}
+@mixin txt_16_sans($color: 'inherit') {
+  font-family: $openSans;
+  font-weight: 400;
+  font-size: clamp(0.8em, 2.1vw, 1em);
+  line-height: 175%;
+  color: $color;
+}
+
+// media queries
+@mixin xl {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin lg {
+  @media screen and (max-width: 1150px) {
+    @content;
+  }
+}
+@mixin md_max {
+  @media screen and (min-width: 750px) {
+    @content;
+  }
+}
+@mixin md_min {
+  @media screen and (max-width: 680px) {
+    @content;
+  }
+}
+@mixin sm_max {
+  @media screen and (min-width: 400px) {
+    @content;
+  }
+}

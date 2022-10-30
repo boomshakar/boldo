@@ -39,6 +39,7 @@ export type BlogArticle = {
 type FooterLink = {
   label: string;
   linkTo: string;
+  tag?: string;
 };
 export type CompanySublink = {
   title: string;

@@ -167,6 +167,7 @@ export const getCompanySubLinks: CompanySublink[] = [
       {
         label: 'Careers',
         linkTo: '/',
+        tag: 'Hiring!',
       },
       {
         label: 'Services',

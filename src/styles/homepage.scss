@@ -22,15 +22,10 @@
         margin-bottom: 2em;
       }
       h1 {
-        font-size: 48px;
-        font-weight: 400;
-        line-height: 150%;
+        @include head_h1_default();
       }
       p {
-        font-family: $openSans;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 175%;
+        @include para_p_default();
       }
       .hero_ctas {
         display: flex;
@@ -165,11 +160,7 @@
       max-width: 842px;
       margin: 0 auto;
       h3 {
-        font-family: 'Manrope';
-        font-weight: 400;
-        font-size: 48px;
-        line-height: 150%;
-        color: $black;
+        @include head_h1_default($black);
         text-align: center;
         margin-top: 0;
       }
@@ -177,8 +168,8 @@
     .card_feature_contain {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, max-content));
-      justify-content: space-between;
-      grid-gap: 2em;
+      justify-content: center;
+      grid-gap: 100px;
       padding: 0;
       max-width: 1100px;
       margin: 2em auto;
@@ -257,10 +248,7 @@
     .rt_sect {
       max-width: 493px;
       .sect_title {
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 56px;
-        color: $black;
+        @include txt_36($black);
       }
     }
     .sect_illustration {
@@ -311,16 +299,12 @@
             display: inline-flex;
             align-items: center;
             span {
-              width: 36px;
-              height: 36px;
+              width: clamp(1em, 3.3vw, 2.5em);
+              height: clamp(1em, 3.3vw, 2.5em);
               margin-right: 2em;
             }
             p {
-              font-family: $openSans;
-              font-weight: 400;
-              font-size: 20px;
-              line-height: 32px;
-              color: $black;
+              @include txt_20_sans($black);
             }
           }
         }
@@ -374,15 +358,13 @@
             padding: 1em 1.4em;
             margin: 0.7em 0;
             span {
-              width: 36px;
-              height: 36px;
+              width: clamp(1em, 3.3vw, 2.5em);
+              height: clamp(1em, 3.3vw, 2.5em);
               margin-right: 2em;
             }
             p {
-              font-family: $openSans;
+              @include txt_16_sans();
               font-weight: 600;
-              font-size: 16px;
-              line-height: 28px;
               margin: 0;
               word-wrap: break-word;
             }
@@ -439,17 +421,16 @@
 .testimonial_sect {
   background-color: $darkBlue;
   color: $white;
-  padding: 4em 6em;
+  padding: clamp(1em, 5vw, 4em) clamp(1em, 7vw, 6em);
   .testimonial_header {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-end;
     .title {
-      font-weight: 400;
-      font-size: 45px;
-      line-height: 72px;
-      max-width: 716px;
+      @include head_h1_default();
+      max-width: 726px;
+      width: 100%;
       margin: 1em 0;
     }
     .testimonial_card_navigation {
@@ -458,8 +439,8 @@
       width: fit-content;
       margin: 1em 0;
       span {
-        width: 72px;
-        height: 72px;
+        width: clamp(2.5em, 7vw, 4.5em);
+        height: clamp(2.5em, 7vw, 4.5em);
         border-radius: 50%;
         background-color: $white;
         display: flex;
@@ -469,22 +450,23 @@
           margin-right: 1.5em;
         }
         img {
-          width: 36px;
-          height: 39px;
+          width: clamp(1em, 3.25vw, 2.25em);
+          height: clamp(1em, 3.5vw, 2.5em);
         }
       }
     }
   }
   .testimonial_card_contain {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, max-content));
+    display: flex;
+    flex-flow: row wrap;
+    // grid-template-columns: repeat(auto-fill, minmax(350px, max-content));
     // justify-content: space-between;
     grid-gap: 2em;
     padding: 0;
     margin: 2em 0;
 
     .testimonial_card_item {
-      width: 350px;
+      max-width: 350px;
       height: fit-content;
       background-color: $white;
       color: $black;
@@ -501,6 +483,7 @@
           font-family: $openSans;
           font-size: 24px;
           line-height: 36px;
+          word-wrap: break-word;
         }
       }
       .profile {
@@ -536,7 +519,7 @@
 }
 .faqs_sect {
   background-color: $white;
-  padding: 4em 6em;
+  padding: clamp(1em, 5vw, 4em) clamp(1em, 7vw, 6em);
 
   .header_banner {
     // max-width: 1100px;
@@ -551,11 +534,9 @@
     margin: 3em 0;
     .lead_text {
       max-width: 500px;
-      font-weight: 400;
-      font-size: 36px;
-      line-height: 56px;
-      color: $black;
+      @include txt_36($black);
       margin: 0;
+      margin-bottom: 1em;
     }
     .faq_points_items_contain {
       max-width: 500px;
@@ -566,16 +547,11 @@
         align-items: center;
         border-bottom: 1px solid $greyShade1;
         span {
-          width: 28px;
-          height: 28px;
+          width: clamp(1.3em, 3.05vw, 1.75em);
+          height: clamp(1.3em, 3.05vw, 1.75em);
         }
         p {
-          font-family: $openSans;
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 32px;
-          color: $black;
-          word-break: break-all;
+          @include txt_20_sans($black);
 
           &:first-child {
             margin-top: 0.7em;
@@ -590,12 +566,8 @@
   & > .title {
     margin-bottom: 12px;
     h4 {
-      font-family: $openSans;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 160%;
       text-align: center;
-      color: $grey;
+      @include txt_20_sans($grey);
       margin: 0;
     }
   }
@@ -604,11 +576,7 @@
     margin: 0 auto;
     margin-bottom: 4em;
     h3 {
-      font-family: 'Manrope';
-      font-weight: 400;
-      font-size: 44px;
-      line-height: 150%;
-      color: $black;
+      @include head_h1_default($black);
       text-align: center;
       margin: 0;
     }

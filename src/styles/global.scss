@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .container {
-  padding: 2em 6em;
+  padding: clamp(1em, 2vw, 2em) clamp(1em, 7vw, 6em);
 }
 
 img {
@@ -53,7 +53,7 @@ img {
 // Button
 .button {
   outline: none;
-  padding: 0.5em 2.8em;
+  padding: 0.5em clamp(1.8em, 3.8vw, 2.8em);
   color: $darkBlue;
   font-weight: 700;
   font-family: 'Open Sans', 'Manrope', 'Helvetica Neue';
@@ -97,7 +97,7 @@ img {
 .blog_articles_contain {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, min-content));
-  justify-content: space-between;
+  justify-content: center;
   // grid-gap: 2em;
   grid-row-gap: 80px;
   grid-column-gap: 50px;
@@ -186,10 +186,7 @@ img {
     width: 100%;
 
     .lead_text {
-      font-weight: 400;
-      font-size: 44px;
-      line-height: 150%;
-      max-width: 716px;
+      @include head_h1_default();
       text-align: center;
     }
     .newsletter_form {
@@ -198,6 +195,7 @@ img {
       align-items: center;
       justify-content: space-between;
       max-width: 604px;
+      width: 100%;
       margin-top: 1em;
 
       input {
@@ -211,6 +209,8 @@ img {
         line-height: 32px;
         margin-right: 2em;
         margin-top: 1em;
+        width: 100%;
+        max-width: 370px;
       }
       button {
         margin-top: 1em;
@@ -256,25 +256,30 @@ img {
       margin-top: 1em;
       display: flex;
       flex-flow: row wrap;
-      justify-content: space-between;
+      // justify-content: center;
+      grid-gap: 1em;
       .sublink_item_list {
-        width: 150px;
+        width: 198px;
         .title {
           font-weight: 700;
-          font-size: 20px;
-          line-height: 32px;
-          font-family: $openSans;
+          @include txt_20_sans();
         }
         & > div {
           margin-bottom: 1.5rem;
         }
         .sublink_item {
           display: block;
-          font-weight: 400;
-          font-size: 20px;
-          line-height: 32px;
-          font-family: $openSans;
-          color: $grey;
+          @include txt_20_sans($grey);
+          .tag {
+            padding: 1px clamp(0.5em, 1.4vw, 0.9em);
+            font-size: clamp(0.5em, 1.3vw, 0.8em);
+            color: $darkBlue;
+            background-color: $green;
+            border-radius: 120px;
+            font-weight: 700;
+            font-size: $openSans;
+            margin-left: 10px;
+          }
         }
       }
     }
