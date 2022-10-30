@@ -184,6 +184,7 @@ img {
     background-position: right top;
     height: 100%;
     width: 100%;
+    padding: 0 1em;
 
     .lead_text {
       @include head_h1_default();
@@ -196,6 +197,7 @@ img {
       justify-content: space-between;
       max-width: 604px;
       width: 100%;
+      margin: 0 auto;
       margin-top: 1em;
 
       input {
@@ -207,12 +209,13 @@ img {
         font-family: $openSans;
         font-size: 20px;
         line-height: 32px;
-        margin-right: 2em;
+        // margin-right: 2em;
         margin-top: 1em;
         width: 100%;
         max-width: 370px;
       }
       button {
+        margin: 0 auto;
         margin-top: 1em;
       }
     }

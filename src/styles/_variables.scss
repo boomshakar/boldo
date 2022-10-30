@@ -39,7 +39,7 @@ $openSans: 'Open Sans', 'Manrope', 'Helvetica Neue';
 @mixin txt_20_sans($color: 'inherit') {
   font-family: $openSans;
   font-weight: 400;
-  font-size: clamp(0.8em, 2.1vw, 1.25em);
+  font-size: clamp(0.9em, 2.1vw, 1.25em);
   line-height: 160%;
   color: $color;
 }

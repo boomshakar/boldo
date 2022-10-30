@@ -139,6 +139,26 @@ export const blogPeakArticles: BlogArticle[] = [
     },
   },
 ];
+export const getCompanyValues = [
+  {
+    thumbnail: '/assets/images/blog_article3.png',
+    label: 'We are commited',
+    content:
+      'Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration.',
+  },
+  {
+    thumbnail: '/assets/images/blog_article3.png',
+    label: 'We are responsible',
+    content:
+      'Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration.',
+  },
+  {
+    thumbnail: '/assets/images/blog_article6.png',
+    label: 'We aim for progress',
+    content:
+      'Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration.',
+  },
+];
 export const getCompanySubLinks: CompanySublink[] = [
   {
     title: 'Landings',
