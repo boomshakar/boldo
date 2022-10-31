@@ -25,6 +25,7 @@ img {
       flex-flow: row wrap;
       align-items: center;
       list-style-type: none;
+      padding: 0;
     }
     &_link {
       color: $white;
@@ -32,6 +33,8 @@ img {
       line-height: 28px;
       font-size: 16px;
       font-family: 'Open Sans', 'Manrope', 'Helvetica Neue';
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
       margin-right: 2.3em;
 
       &:last-child,

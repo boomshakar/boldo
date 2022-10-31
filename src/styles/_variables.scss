@@ -63,7 +63,7 @@ $openSans: 'Open Sans', 'Manrope', 'Helvetica Neue';
   }
 }
 @mixin md_max {
-  @media screen and (min-width: 750px) {
+  @media screen and (max-width: 750px) {
     @content;
   }
 }
