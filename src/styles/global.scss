@@ -192,6 +192,7 @@ img {
     .lead_text {
       @include head_h1_default();
       text-align: center;
+      max-width: 726px;
     }
     .newsletter_form {
       display: flex;
